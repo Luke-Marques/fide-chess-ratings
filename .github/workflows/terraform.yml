@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+    - dev
     - main
     paths:
     - terraform/**
@@ -18,7 +19,7 @@ env:
   # verbosity setting for Terraform logs
   TF_LOG: INFO
   # Credentials for deployment to GCP
-  GCP_CREDENTIALS: ${{ secrets.TERRAFORM_GCP_SA_CREDENTIALS }}
+  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TERRAFORM_GCP_SA_CREDENTIALS }}
  
 jobs:
   terraform:
