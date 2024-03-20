@@ -1,4 +1,4 @@
-name: "All-in-one: GCP & Prefect Cloud - quick start"
+name: "Prefect Deployment Pipeline"
 on:
   workflow_dispatch:
     inputs:
